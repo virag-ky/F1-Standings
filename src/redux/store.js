@@ -1,10 +1,10 @@
-import { combineReducers, applyMiddleware, configureStore } from "redux";
-import thunk from "redux-thunk";
+import { combineReducers } from 'redux';
+import { configureStore } from '@reduxjs/toolkit';
 
 const reducers = combineReducers({
-  home: homePageReducer,
+  // home: homePageReducer,
 });
 
-const store = configureStore(reducers, applyMiddleware(thunk));
+const store = configureStore(reducers);
 
 export default store;
