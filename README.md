@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Formula-1 Standings
 
-## Available Scripts
+> This web application displays the standings of the Formula-1 drivers and constructors in every season. The user can search for a specific season, from 1950 until the current year and the final points of the drivers and constructors will be displayed, from first to last. If the user enters the current year, then the current standings in the championship will be displayed.
 
-In the project directory, you can run:
+## Built With
 
-### `npm start`
+- Create React App (CRA)
+- React
+- Redux
+- JavaScript
+- CSS
+- API
+- linters
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Live-Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- web browser (e.g. Google Chrome, Firefox)
+- text editor (e.g. VSCode)
+- CLI/terminal
 
-### `npm run build`
+### Clone this repository
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+git clone git@github.com:virag-ky/F1-Standings.git
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Install dependencies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm install
+```
 
-### `npm run eject`
+### Run tests
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+npm run test
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Open the project in the browser
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+npm run start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Author
 
-## Learn More
+👤 **Virag Kormoczy**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- GitHub: [@virag-ky](https://github.com/virag-ky)
+- Twitter: [@Virag_Ky](https://twitter.com/Virag_Ky)
+- LinkedIn: [virag-kormoczy](https://linkedin.com/in/virag-kormoczy)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🤝 Contributing
 
-### Code Splitting
+Contributions, issues, and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Feel free to check the [issues page](../../issues/).
 
-### Analyzing the Bundle Size
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Give a ⭐️ if you like this project!
 
-### Making a Progressive Web App
+## Acknowledgements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- The [Ergast Developer API](http://ergast.com/mrd/) was used, which is an experimental web service which provides a historical record of motor racing data for non-commercial purposes. The API provides data for the Formula One series, from the beginning of the world championships in 1950.
+- Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
+- [creativecommons license](https://creativecommons.org/licenses/by-nc/4.0/)
 
-### Advanced Configuration
+## 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./MIT.md) licensed.
