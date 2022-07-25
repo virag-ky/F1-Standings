@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import Paper from '@mui/material/Paper';
-import InputBase from '@mui/material/InputBase';
 import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
+import NumberFormat from 'react-number-format';
 import { fetchSeason } from '../redux/homepage/homepage';
 
 const HomePage = () => {
@@ -41,10 +41,9 @@ const HomePage = () => {
             width: 400,
           }}
         >
-          <InputBase
-            sx={{ ml: 1, flex: 1 }}
+          <NumberFormat
+            format="####"
             placeholder="Search by year, e.g. 1985"
-            inputProps={{ 'aria-label': 'search by year' }}
             value={year}
             onChange={changeSeason}
             onKeyDown={changeOnEnter}
