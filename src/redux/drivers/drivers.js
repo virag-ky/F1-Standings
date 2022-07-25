@@ -25,7 +25,9 @@ export const fetchDrivers = (year) => async (dispatch) => {
         const firstName = driver.Driver.givenName;
         const lastName = driver.Driver.familyName;
         const driverName = `${firstName} ${lastName}`;
-        return [position, points, wins, driverName];
+        return {
+          position, points, wins, driverName,
+        };
       },
     ));
 

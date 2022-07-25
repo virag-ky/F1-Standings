@@ -24,7 +24,6 @@ const HomePage = () => {
     if (e.key === 'Enter') {
       if (year.match(regex)) {
         e.preventDefault();
-        console.log(year);
         dispatch(fetchSeason(year));
         dispatch(fetchDrivers(year));
         setYear('');
