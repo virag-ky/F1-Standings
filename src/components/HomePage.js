@@ -6,22 +6,29 @@ import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import NumberFormat from 'react-number-format';
 import { fetchSeason } from '../redux/homepage/homepage';
+import { fetchDrivers } from '../redux/drivers/drivers';
 
 const HomePage = () => {
   const [year, setYear] = useState('');
   const season = useSelector((state) => state.home);
   const dispatch = useDispatch();
+  const regex = /(195\d|19[6-9]\d|20[01]\d|202[0-2])/;
 
   const handleEvent = () => {
     dispatch(fetchSeason(year));
+    dispatch(fetchDrivers(year));
     setYear('');
   };
 
   const changeOnEnter = (e) => {
     if (e.key === 'Enter') {
-      e.preventDefault();
-      dispatch(fetchSeason(year));
-      setYear('');
+      if (year.match(regex)) {
+        e.preventDefault();
+        console.log(year);
+        dispatch(fetchSeason(year));
+        dispatch(fetchDrivers(year));
+        setYear('');
+      }
     }
   };
 
