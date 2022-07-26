@@ -11,6 +11,8 @@ import { fetchSeason } from '../redux/homepage/homepage';
 import { fetchDrivers } from '../redux/drivers/drivers';
 import { fetchConstructors } from '../redux/constructors/constructors';
 import { fetchRaces } from '../redux/races/races';
+import '../styles/homepage.css';
+import racecar from '../images/racecar.jpg';
 
 const HomePage = (props) => {
   const [year, setYear] = useState('');
@@ -47,6 +49,18 @@ const HomePage = (props) => {
 
   return (
     <div className="homePageContainer">
+      <div className="headLine">
+        <p>
+          Formula 1 racing began in 1950 and is the world&apos;s most
+          prestigious motor racing competition.
+        </p>
+        <br />
+        <p>
+          This web application displays data of the current and past standings
+          in the championships, both driver&apos;s and constructor&apos;s. Type
+          a year (from 1950) in the search field to get the standings.
+        </p>
+      </div>
       <div className="searchContainer">
         <Paper
           component="form"
@@ -54,7 +68,9 @@ const HomePage = (props) => {
             p: '2px 4px',
             display: 'flex',
             alignItems: 'center',
+            justifyContent: 'space-between',
             width: 300,
+            height: 35,
           }}
         >
           <NumberFormat
@@ -63,6 +79,7 @@ const HomePage = (props) => {
             value={year}
             onChange={changeSeason}
             onKeyDown={changeOnEnter}
+            className="search"
           />
           <IconButton
             type="button"
@@ -74,30 +91,39 @@ const HomePage = (props) => {
           </IconButton>
         </Paper>
       </div>
-      <div className="yearOfStandingsContainer">
-        <div>
-          <h2>
-            <span>{!season ? { currentYear } : season}</span>
-            Standings
-          </h2>
-          <span>
-            {races}
-            races
-          </span>
+      <div className="mainContainer">
+        <div className="yearOfStandingsContainer">
+          <div className="imageContainer">
+            <img src={racecar} alt="formula 1 car" className="racecar" />
+            <div className="mask" />
+          </div>
+          <div className="standingsYear">
+            <h2>
+              <span className="year">{!season ? { currentYear } : season}</span>
+              STANDINGS
+            </h2>
+            <span className="races">
+              {races}
+              {' '}
+              Races
+            </span>
+          </div>
         </div>
-      </div>
-      <div className="standingsContainer">
-        <div className="driversContainer">
-          <NavLink to="drivers">
-            <ArrowCircleRightOutlinedIcon />
-          </NavLink>
-          <h3>Drivers</h3>
-        </div>
-        <div className="constructorsContainer">
-          <NavLink to="constructors">
-            <ArrowCircleRightOutlinedIcon />
-          </NavLink>
-          <h3>Constructors</h3>
+        <div className="standingsContainer">
+          <div className="driversContainer standings">
+            <NavLink to="drivers">
+              <ArrowCircleRightOutlinedIcon />
+            </NavLink>
+            <h3>DRIVERS</h3>
+            <div className="standingsMask1" />
+          </div>
+          <div className="constructorsContainer standings">
+            <NavLink to="constructors">
+              <ArrowCircleRightOutlinedIcon />
+            </NavLink>
+            <h3>CONSTRUCTORS</h3>
+            <div className="standingsMask" />
+          </div>
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@ const endURLDrivers = '/driverStandings';
 const driversReducer = (state = [], action) => {
   switch (action.type) {
     case GET_DRIVERS:
-      return action.drivers;
+      return JSON.stringify(action.drivers);
     default:
       return state;
   }
