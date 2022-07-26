@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import Paper from '@mui/material/Paper';
 import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import NumberFormat from 'react-number-format';
+import PropTypes from 'prop-types';
 import { fetchSeason } from '../redux/homepage/homepage';
 import { fetchDrivers } from '../redux/drivers/drivers';
 
-const HomePage = () => {
+const HomePage = (props) => {
   const [year, setYear] = useState('');
-  const season = useSelector((state) => state.home);
+  const { season, currentYear } = props;
   const dispatch = useDispatch();
   const regex = /(195\d|19[6-9]\d|20[01]\d|202[0-2])/;
 
@@ -67,7 +68,7 @@ const HomePage = () => {
       <div className="yearOfStandingsContainer">
         <div>
           <h2>
-            <span>{!season ? '2022' : season}</span>
+            <span>{!season ? { currentYear } : season}</span>
             Standings
           </h2>
           <span>23 races</span>
@@ -85,6 +86,11 @@ const HomePage = () => {
       </div>
     </div>
   );
+};
+
+HomePage.propTypes = {
+  season: PropTypes.number.isRequired,
+  currentYear: PropTypes.number.isRequired,
 };
 
 export default HomePage;
