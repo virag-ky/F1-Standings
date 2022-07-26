@@ -54,7 +54,7 @@ const HomePage = (props) => {
             p: '2px 4px',
             display: 'flex',
             alignItems: 'center',
-            width: 400,
+            width: 300,
           }}
         >
           <NumberFormat

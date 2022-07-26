@@ -15,12 +15,13 @@ const Navbar = (props) => {
         <div className="goBackBtn">
           <NavLink to="/">
             <ArrowBackIosIcon />
+            <span className="navYear">
+              {!season ? { currentYear } : season}
+            </span>
           </NavLink>
-
-          <span>{!season ? { currentYear } : season}</span>
         </div>
-        <span>F1 Standings</span>
-        <div>
+        <span className="title">F1 - Standings</span>
+        <div className="icons">
           <MicIcon />
           <SettingsIcon />
         </div>
