@@ -6,6 +6,7 @@ import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import NumberFormat from 'react-number-format';
 import PropTypes from 'prop-types';
+import ArrowCircleRightOutlinedIcon from '@mui/icons-material/ArrowCircleRightOutlined';
 import { fetchSeason } from '../redux/homepage/homepage';
 import { fetchDrivers } from '../redux/drivers/drivers';
 import { fetchConstructors } from '../redux/constructors/constructors';
@@ -87,11 +88,15 @@ const HomePage = (props) => {
       </div>
       <div className="standingsContainer">
         <div className="driversContainer">
-          <NavLink to="drivers">next</NavLink>
+          <NavLink to="drivers">
+            <ArrowCircleRightOutlinedIcon />
+          </NavLink>
           <h3>Drivers</h3>
         </div>
         <div className="constructorsContainer">
-          <NavLink to="constructors">next</NavLink>
+          <NavLink to="constructors">
+            <ArrowCircleRightOutlinedIcon />
+          </NavLink>
           <h3>Constructors</h3>
         </div>
       </div>
