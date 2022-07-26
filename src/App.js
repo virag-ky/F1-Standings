@@ -8,7 +8,7 @@ import ConstructorsDetails from './components/ConstructorsDetails';
 
 const App = () => {
   const season = useSelector((state) => state.home);
-  const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear().toString();
 
   return (
     <div className="App">

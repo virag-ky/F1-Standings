@@ -23,8 +23,8 @@ const Navbar = (props) => {
 };
 
 Navbar.propTypes = {
-  season: PropTypes.number.isRequired,
-  currentYear: PropTypes.number.isRequired,
+  season: PropTypes.string.isRequired,
+  currentYear: PropTypes.string.isRequired,
 };
 
 export default Navbar;

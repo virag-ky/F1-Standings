@@ -6,7 +6,7 @@ import constructorReducer, {
   fetchConstructors,
 } from './constructors/constructors';
 
-const currentYear = new Date().getFullYear();
+const currentYear = new Date().getFullYear().toString();
 
 const reducers = combineReducers({
   home: homePageReducer,

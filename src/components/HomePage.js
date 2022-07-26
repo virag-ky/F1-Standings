@@ -8,6 +8,7 @@ import NumberFormat from 'react-number-format';
 import PropTypes from 'prop-types';
 import { fetchSeason } from '../redux/homepage/homepage';
 import { fetchDrivers } from '../redux/drivers/drivers';
+import { fetchConstructors } from '../redux/constructors/constructors';
 
 const HomePage = (props) => {
   const [year, setYear] = useState('');
@@ -18,6 +19,7 @@ const HomePage = (props) => {
   const handleEvent = () => {
     dispatch(fetchSeason(year));
     dispatch(fetchDrivers(year));
+    dispatch(fetchConstructors(year));
     setYear('');
   };
 
@@ -27,6 +29,7 @@ const HomePage = (props) => {
         e.preventDefault();
         dispatch(fetchSeason(year));
         dispatch(fetchDrivers(year));
+        dispatch(fetchConstructors(year));
         setYear('');
       }
     }
@@ -89,8 +92,8 @@ const HomePage = (props) => {
 };
 
 HomePage.propTypes = {
-  season: PropTypes.number.isRequired,
-  currentYear: PropTypes.number.isRequired,
+  season: PropTypes.string.isRequired,
+  currentYear: PropTypes.string.isRequired,
 };
 
 export default HomePage;

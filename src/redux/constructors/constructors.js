@@ -17,7 +17,12 @@ const getConstructors = (constructors) => ({
 });
 
 export const fetchConstructors = (year) => async (dispatch) => {
-  const constructors = await fetch(`${baseURL}${year}${endURLConstructors}.json`)
+  if (year < 1958) {
+    dispatch(getConstructors([]));
+  }
+  const constructors = await fetch(
+    `${baseURL}${year}${endURLConstructors}.json`,
+  )
     .then((res) => res.json())
     .then((data) => data.MRData.StandingsTable.StandingsLists[0].ConstructorStandings.map(
       (constructor) => {
