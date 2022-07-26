@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import Paper from '@mui/material/Paper';
 import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
@@ -9,17 +9,24 @@ import PropTypes from 'prop-types';
 import { fetchSeason } from '../redux/homepage/homepage';
 import { fetchDrivers } from '../redux/drivers/drivers';
 import { fetchConstructors } from '../redux/constructors/constructors';
+import { fetchRaces } from '../redux/races/races';
 
 const HomePage = (props) => {
   const [year, setYear] = useState('');
   const { season, currentYear } = props;
   const dispatch = useDispatch();
+  const races = useSelector((state) => state.race);
   const regex = /(195\d|19[6-9]\d|20[01]\d|202[0-2])/;
 
-  const handleEvent = () => {
+  const fetchData = () => {
     dispatch(fetchSeason(year));
     dispatch(fetchDrivers(year));
     dispatch(fetchConstructors(year));
+    dispatch(fetchRaces(year));
+  };
+
+  const handleEvent = () => {
+    fetchData();
     setYear('');
   };
 
@@ -27,9 +34,7 @@ const HomePage = (props) => {
     if (e.key === 'Enter') {
       if (year.match(regex)) {
         e.preventDefault();
-        dispatch(fetchSeason(year));
-        dispatch(fetchDrivers(year));
-        dispatch(fetchConstructors(year));
+        fetchData();
         setYear('');
       }
     }
@@ -74,7 +79,10 @@ const HomePage = (props) => {
             <span>{!season ? { currentYear } : season}</span>
             Standings
           </h2>
-          <span>23 races</span>
+          <span>
+            {races}
+            races
+          </span>
         </div>
       </div>
       <div className="standingsContainer">

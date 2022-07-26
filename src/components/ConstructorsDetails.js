@@ -5,8 +5,6 @@ import Constructor from './Constructor';
 const ConstructorsDetails = () => {
   const constructors = useSelector((state) => state.constructor);
 
-  console.log(constructors);
-
   return (
     <div className="constructorsDetailsContainer">
       <div className="constructorsStandings">
