@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import MicIcon from '@mui/icons-material/Mic';
 import SettingsIcon from '@mui/icons-material/Settings';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import '../styles/navbar.css';
 
 const Navbar = (props) => {
   const { season, currentYear } = props;
