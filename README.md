@@ -14,7 +14,22 @@
 - API
 - linters
 
+## Deployment:
+### https://virag-ky-f1-standings.herokuapp.com/
+
 ## Live-Demo
+<div align="center">
+<table>
+ <tr>
+   <td>
+    <img src='https://user-images.githubusercontent.com/79658534/181239668-8856365d-2fae-45c0-a4b7-0373e1696b8f.png'>
+   </td>
+  <td>
+    <img src="https://user-images.githubusercontent.com/79658534/181239689-b7d50e4c-e68d-4f5f-b80f-8b1e4ea3011c.png">
+   </td>
+  </tr>
+</table>
+</div>
 
 ## Getting Started
 
