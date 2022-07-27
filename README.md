@@ -17,7 +17,7 @@
 ## Deployment:
 ### https://virag-ky-f1-standings.herokuapp.com/
 
-## Live-Demo
+## Demo
 <div align="center">
 <table>
  <tr>
