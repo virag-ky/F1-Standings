@@ -1,5 +1,5 @@
 const GET_CONSTRUCTORS = 'f1-standings/constructors/GET_CONSTRUCTORS';
-const baseURL = 'http://ergast.com/api/f1/';
+const baseURL = 'https://ergast.com/api/f1/';
 const endURLConstructors = '/constructorStandings';
 
 const constructorReducer = (state = [], action) => {

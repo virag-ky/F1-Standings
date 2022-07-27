@@ -1,5 +1,5 @@
 const GET_DRIVERS = 'f1-standings/drivers/GET_DRIVERS';
-const baseURL = 'http://ergast.com/api/f1/';
+const baseURL = 'https://ergast.com/api/f1/';
 const endURLDrivers = '/driverStandings';
 
 const driversReducer = (state = [], action) => {
