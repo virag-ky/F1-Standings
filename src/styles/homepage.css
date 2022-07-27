@@ -1,6 +1,6 @@
 .homePageContainer {
   background: rgb(63, 58, 58);
-  padding: 30px 0;
+  padding: 30px 0 0 0;
   height: 100vh;
   color: #fff;
   display: flex;
@@ -95,7 +95,7 @@
   z-index: 2;
 }
 
-.driversContainer {
+.driversContainer, .constructorsContainer {
   background: url('../images/driver.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -104,9 +104,7 @@
 
 .constructorsContainer {
   background: url('../images/trophy.png');
-  background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 
 .standingsMask1,

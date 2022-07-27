@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import Driver from './Driver';
+import '../styles/drivers.css';
 
 const DriversDetails = () => {
   const drivers = useSelector((state) => state.driver);
@@ -8,15 +9,20 @@ const DriversDetails = () => {
   return (
     <div className="driversDetailsContainer">
       <div className="driversStandings">
-        <h2>Driver&apos;s Standings</h2>
+        <div className="driverImg">
+          <div className="mask" />
+        </div>
+        <div className="driversTitleDiv">
+          <h2 className="driversTitle">DRIVER&apos;S STANDINGS</h2>
+        </div>
       </div>
       <table>
         <thead>
-          <tr>
-            <th>Name</th>
-            <th>Position</th>
-            <th>Wins</th>
-            <th>Points</th>
+          <tr id="head">
+            <th>NAME</th>
+            <th>POSITION</th>
+            <th>WINS</th>
+            <th>POINTS</th>
           </tr>
         </thead>
         <tbody>

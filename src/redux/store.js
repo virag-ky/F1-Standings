@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import { configureStore } from '@reduxjs/toolkit';
+import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
 import homePageReducer, { fetchSeason } from './homepage/homepage';
 import driversReducer, { fetchDrivers } from './drivers/drivers';
 import constructorReducer, {
@@ -16,7 +16,12 @@ const reducers = combineReducers({
   race: racesReducer,
 });
 
-const store = configureStore({ reducer: reducers });
+const store = configureStore({
+  reducer: reducers,
+  middleware: getDefaultMiddleware({
+    serializableCheck: false,
+  }),
+});
 store.dispatch(fetchSeason(currentYear));
 store.dispatch(fetchDrivers(currentYear));
 store.dispatch(fetchConstructors(currentYear));

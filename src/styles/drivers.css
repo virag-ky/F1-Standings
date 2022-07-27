@@ -1,0 +1,67 @@
+.driversDetailsContainer {
+  height: 100vh;
+  color: #fff;
+  overflow: scroll;
+}
+
+.driversStandings {
+  display: flex;
+}
+
+.driverImg {
+  background: url('../images/driver.png');
+  background-size: cover;
+  width: 50%;
+  height: 200px;
+  position: relative;
+}
+
+.driverImg > .mask {
+  position: absolute;
+  top: 0;
+}
+
+.driversTitleDiv {
+  background:  rgba(145, 11, 11, 0.6);
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+  width: 50%;
+}
+
+.driversTitle {
+  text-align: right;
+  font-size: 1.2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 15px 8px;
+  font-size: 1.2rem;
+}
+
+tr:nth-child(odd) {
+background: rgba(212, 43, 43, 0.5);
+}
+
+tr:nth-child(even) {
+  background: rgba(145, 11, 11, 0.6);
+}
+
+#head {
+  background: rgb(167, 17, 17);
+}
+
+th {
+  padding: 2px;
+  font-size: 0.8rem;
+}
+
+.data {
+  text-align: center;
+}
+

@@ -5,7 +5,7 @@ const endURLDrivers = '/driverStandings';
 const driversReducer = (state = [], action) => {
   switch (action.type) {
     case GET_DRIVERS:
-      return JSON.stringify(action.drivers);
+      return action.drivers;
     default:
       return state;
   }
@@ -17,7 +17,9 @@ const getDrivers = (drivers) => ({
 });
 
 export const fetchDrivers = (year) => async (dispatch) => {
-  const drivers = await fetch(`${baseURL}${year}${endURLDrivers}.json`)
+  const drivers = await fetch(`${baseURL}${year}${endURLDrivers}.json`, {
+    method: 'GET',
+  })
     .then((res) => res.json())
     .then((data) => data.MRData.StandingsTable.StandingsLists[0].DriverStandings.map(
       (driver) => {
@@ -33,7 +35,6 @@ export const fetchDrivers = (year) => async (dispatch) => {
         };
       },
     ));
-
   dispatch(getDrivers(drivers));
 };
 
