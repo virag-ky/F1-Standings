@@ -119,3 +119,32 @@
 .standingsMask1 {
   background: rgba(141, 3, 3, 0.6);
 }
+
+@media (min-width: 601px) {
+  .homePageContainer {
+    align-items: center;
+  }
+
+  .headLine {
+    width: 50%;
+    font-size: 1.5rem;
+    margin-top: 50px;
+  }  
+
+  .yearOfStandingsContainer, 
+  .standingsContainer {
+    height: 280px;
+  }
+
+  .searchContainer {
+    margin-bottom: 30px;
+  }
+
+  .standingsYear > h2 {
+    font-size: 1.8rem;
+  }
+
+  .standings > h3 {
+    font-size: 1.3rem;
+  }
+}
