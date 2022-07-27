@@ -1,5 +1,5 @@
 const GET_RACES = 'f1-standings/drivers/GET_RACES';
-const baseURL = 'http://ergast.com/api/f1/';
+const baseURL = 'https://ergast.com/api/f1/';
 const endURLDrivers = '/driverStandings';
 
 const racesReducer = (state = [], action) => {
