@@ -19,6 +19,8 @@ const HomePage = (props) => {
   const { season, currentYear } = props;
   const dispatch = useDispatch();
   const races = useSelector((state) => state.race);
+  const drivers = useSelector((state) => state.driver);
+  const constructors = useSelector((state) => state.constructor);
   const regex = /(195\d|19[6-9]\d|20[01]\d|202[0-2])/;
 
   const fetchData = () => {
@@ -114,14 +116,22 @@ const HomePage = (props) => {
             <NavLink to="drivers">
               <ArrowCircleRightOutlinedIcon />
             </NavLink>
-            <h3>DRIVERS</h3>
+            <h3>
+              DRIVERS
+              {' '}
+              <span>{drivers.length}</span>
+            </h3>
             <div className="standingsMask1" />
           </div>
           <div className="constructorsContainer standings">
             <NavLink to="constructors">
               <ArrowCircleRightOutlinedIcon />
             </NavLink>
-            <h3>CONSTRUCTORS</h3>
+            <h3>
+              CONSTRUCTORS
+              {' '}
+              <span>{constructors.length}</span>
+            </h3>
             <div className="standingsMask" />
           </div>
         </div>

@@ -22,7 +22,7 @@
 }
 
 .driversTitleDiv {
-  background:  rgba(145, 11, 11, 0.6);
+  background: rgba(145, 11, 11, 0.6);
   display: flex;
   align-items: center;
   padding-right: 15px;
@@ -46,7 +46,7 @@ td {
 }
 
 tr:nth-child(odd) {
-background: rgba(212, 43, 43, 0.5);
+  background: rgba(212, 43, 43, 0.5);
 }
 
 tr:nth-child(even) {
@@ -88,4 +88,3 @@ th {
     font-size: 1.5rem;
   }
 }
-
