@@ -7,9 +7,9 @@ const Constructor = (props) => {
   return (
     <tr>
       <td>{name}</td>
-      <td>{position}</td>
-      <td>{wins}</td>
-      <td>{points}</td>
+      <td className="data">{position}</td>
+      <td className="data">{wins}</td>
+      <td className="data">{points}</td>
     </tr>
   );
 };

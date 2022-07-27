@@ -1,27 +1,27 @@
-.driversDetailsContainer {
+.constructorsDetailsContainer {
   height: 100vh;
   color: #fff;
   overflow: scroll;
 }
 
-.driversStandings {
+.constructorsStandings {
   display: flex;
 }
 
-.driverImg {
-  background: url('../images/driver.png');
+.constructorImg {
+  background: url('../images/trophy.png');
   background-size: cover;
   width: 50%;
   height: 200px;
   position: relative;
 }
 
-.driverImg > .mask {
+.constructorImg > .mask {
   position: absolute;
   top: 0;
 }
 
-.driversTitleDiv {
+.constructorsTitleDiv {
   background:  rgba(145, 11, 11, 0.6);
   display: flex;
   align-items: center;
@@ -29,7 +29,7 @@
   width: 50%;
 }
 
-.driversTitle {
+.constructorsTitle {
   text-align: right;
   font-size: 1.2rem;
 }
@@ -64,5 +64,11 @@ th {
 
 .data {
   text-align: center;
+}
+
+#noConstructors {
+  display: flex;
+  justify-content: center;
+  background: transparent;
 }
 

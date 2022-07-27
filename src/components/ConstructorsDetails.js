@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import Constructor from './Constructor';
+import '../styles/constructors.css';
 
 const ConstructorsDetails = () => {
   const constructors = useSelector((state) => state.constructor);
@@ -8,15 +9,20 @@ const ConstructorsDetails = () => {
   return (
     <div className="constructorsDetailsContainer">
       <div className="constructorsStandings">
-        <h2>Constructor&apos;s Standings</h2>
+        <div className="constructorImg">
+          <div className="mask" />
+        </div>
+        <div className="constructorsTitleDiv">
+          <h2 className="constructorsTitle">CONSTRUCTOR&apos;S STANDINGS</h2>
+        </div>
       </div>
       <table>
         <thead>
-          <tr>
-            <th>Name</th>
-            <th>Position</th>
-            <th>Wins</th>
-            <th>Points</th>
+          <tr id="head">
+            <th>NAME</th>
+            <th>POSITION</th>
+            <th>WINS</th>
+            <th>POINTS</th>
           </tr>
         </thead>
         <tbody>
@@ -31,7 +37,7 @@ const ConstructorsDetails = () => {
               />
             ))
           ) : (
-            <tr>
+            <tr id="noConstructors">
               <td>
                 <h3>No constructors</h3>
               </td>
