@@ -72,3 +72,29 @@ th {
   background: transparent;
 }
 
+@media (min-width: 601px) {
+  .constructorsDetailsContainer {
+    height: auto;
+  }
+
+  .constructorImg {
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .constructorsTitle {
+    width: 100%;
+    padding-right: 250px;
+    font-size: 1.8rem;
+  }
+
+  th {
+    font-size: 1.2rem;
+  }
+
+  td {
+    font-size: 1.5rem;
+  }
+}
