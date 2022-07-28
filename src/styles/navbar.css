@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.navbarContainer {
+  font-family: 'Lato', sans-serif;
+  background: rgb(167, 17, 17);
+  width: 100%;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+}
+
+.goBackBtn {
+  display: flex;
+  align-items: center;
+}
+
+.icons {
+  width: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navYear {
+  font-size: 1.2rem;
+}
+
+.title {
+  color: rgba(250, 250, 250, 0.8);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+@media (min-width: 601px) {
+  .title {
+    font-size: 1.5rem;
+  }
+}

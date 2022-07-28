@@ -1,0 +1,100 @@
+.constructorsDetailsContainer {
+  height: 100vh;
+  color: #fff;
+  overflow: scroll;
+}
+
+.constructorsStandings {
+  display: flex;
+}
+
+.constructorImg {
+  background: url('../images/trophy.png');
+  background-size: cover;
+  width: 50%;
+  height: 200px;
+  position: relative;
+}
+
+.constructorImg > .mask {
+  position: absolute;
+  top: 0;
+}
+
+.constructorsTitleDiv {
+  background: rgba(145, 11, 11, 0.6);
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+  width: 50%;
+}
+
+.constructorsTitle {
+  text-align: right;
+  font-size: 1.2rem;
+}
+
+table {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 15px 8px;
+  font-size: 1.2rem;
+}
+
+tr:nth-child(odd) {
+  background: rgba(212, 43, 43, 0.5);
+}
+
+tr:nth-child(even) {
+  background: rgba(145, 11, 11, 0.6);
+}
+
+#head {
+  background: rgb(167, 17, 17);
+}
+
+th {
+  padding: 2px;
+  font-size: 0.8rem;
+}
+
+.data {
+  text-align: center;
+}
+
+#noConstructors {
+  display: flex;
+  justify-content: center;
+  background: transparent;
+}
+
+@media (min-width: 601px) {
+  .constructorsDetailsContainer {
+    height: auto;
+  }
+
+  .constructorImg {
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .constructorsTitle {
+    width: 100%;
+    padding-right: 250px;
+    font-size: 1.8rem;
+  }
+
+  th {
+    font-size: 1.2rem;
+  }
+
+  td {
+    font-size: 1.5rem;
+  }
+}

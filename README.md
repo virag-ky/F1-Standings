@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Formula-1 Standings
 
-## Available Scripts
+> This web application displays the standings of the Formula-1 drivers and constructors in every season. The user can search for a specific season, from 1950 until the current year and the final points of the drivers and constructors will be displayed, from first to last. If the user enters the current year, then the current standings in the championship will be displayed.
 
-In the project directory, you can run:
+## Built With
 
-### `npm start`
+- Create React App (CRA)
+- React
+- Redux
+- JavaScript
+- CSS
+- API
+- linters
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Deployment:
+### https://virag-ky-f1-standings.herokuapp.com/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Demo
+<div align="center">
+<table>
+ <tr>
+   <td>
+    <img src='https://user-images.githubusercontent.com/79658534/181239668-8856365d-2fae-45c0-a4b7-0373e1696b8f.png'>
+   </td>
+  <td>
+    <img src="https://user-images.githubusercontent.com/79658534/181239689-b7d50e4c-e68d-4f5f-b80f-8b1e4ea3011c.png">
+   </td>
+  </tr>
+</table>
+</div>
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- web browser (e.g. Google Chrome, Firefox)
+- text editor (e.g. VSCode)
+- CLI/terminal
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Clone this repository
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+git clone git@github.com:virag-ky/F1-Standings.git
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Install dependencies
 
-### `npm run eject`
+```
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Run tests
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+npm run test
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Open the project in the browser
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+npm run start
+```
 
-## Learn More
+## Author
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+👤 **Virag Kormoczy**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- GitHub: [@virag-ky](https://github.com/virag-ky)
+- Twitter: [@Virag_Ky](https://twitter.com/Virag_Ky)
+- LinkedIn: [virag-kormoczy](https://linkedin.com/in/virag-kormoczy)
 
-### Code Splitting
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contributions, issues, and feature requests are welcome!
 
-### Analyzing the Bundle Size
+Feel free to check the [issues page](../../issues/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Show your support
 
-### Making a Progressive Web App
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Acknowledgements
 
-### Advanced Configuration
+- The [Ergast Developer API](http://ergast.com/mrd/) was used, which is an experimental web service which provides a historical record of motor racing data for non-commercial purposes. The API provides data for the Formula One series, from the beginning of the world championships in 1950.
+- Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
+- [creativecommons license](https://creativecommons.org/licenses/by-nc/4.0/)
+- Photo by <a href="https://unsplash.com/@moritzgrf?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Moritz Graf</a> on <a href="https://unsplash.com/s/photos/red-bull-f1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- <a href="https://www.flaticon.com/free-icons/racing-car" title="racing car icons">Racing car icons created by Freepik - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/trophy" title="trophy icons">Trophy icons created by Smashicons - Flaticon</a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📝 License
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./MIT.md) licensed.

@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
+import { Route, Routes } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import Navbar from './components/Navbar';
+import HomePage from './components/HomePage';
+import DriversDetails from './components/DriversDetails';
+import ConstructorsDetails from './components/ConstructorsDetails';
 
-function App() {
+const App = () => {
+  const season = useSelector((state) => state.home);
+  const currentYear = new Date().getFullYear().toString();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar season={season} currentYear={currentYear} />
+      <Routes>
+        <Route
+          path="/"
+          element={<HomePage season={season} currentYear={currentYear} />}
+        />
+        <Route path="drivers" element={<DriversDetails />} />
+        <Route path="constructors" element={<ConstructorsDetails />} />
+      </Routes>
     </div>
   );
-}
+};
 
 export default App;
