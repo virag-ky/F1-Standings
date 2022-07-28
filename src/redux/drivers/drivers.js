@@ -1,4 +1,4 @@
-const GET_DRIVERS = 'f1-standings/drivers/GET_DRIVERS';
+export const GET_DRIVERS = 'f1-standings/drivers/GET_DRIVERS';
 const baseURL = 'https://ergast.com/api/f1/';
 const endURLDrivers = '/driverStandings';
 

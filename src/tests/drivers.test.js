@@ -11,7 +11,7 @@ describe("driver's page renders correctly", () => {
         <DriversDetails />
       </Provider>,
     );
-    expect(getByText("Driver's Standings")).toBeInTheDocument();
+    expect(getByText("DRIVER'S STANDINGS")).toBeInTheDocument();
   });
 
   test('renders the page', () => {

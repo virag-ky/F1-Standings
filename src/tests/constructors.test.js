@@ -11,7 +11,7 @@ describe("constructor's page renders correctly", () => {
         <ConstructorsDetails />
       </Provider>,
     );
-    expect(getByText("Constructor's Standings")).toBeInTheDocument();
+    expect(getByText("CONSTRUCTOR'S STANDINGS")).toBeInTheDocument();
   });
 
   test('renders the page', () => {

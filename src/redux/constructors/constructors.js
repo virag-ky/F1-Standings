@@ -1,4 +1,4 @@
-const GET_CONSTRUCTORS = 'f1-standings/constructors/GET_CONSTRUCTORS';
+export const GET_CONSTRUCTORS = 'f1-standings/constructors/GET_CONSTRUCTORS';
 const baseURL = 'https://ergast.com/api/f1/';
 const endURLConstructors = '/constructorStandings';
 
@@ -36,7 +36,6 @@ export const fetchConstructors = (year) => async (dispatch) => {
         };
       },
     ));
-
   dispatch(getConstructors(constructors));
 };
 

@@ -11,24 +11,39 @@ Object {
         <div
           class="constructorsStandings"
         >
-          <h2>
-            Constructor's Standings
-          </h2>
+          <div
+            class="constructorImg"
+          >
+            <div
+              class="mask"
+            />
+          </div>
+          <div
+            class="constructorsTitleDiv"
+          >
+            <h2
+              class="constructorsTitle"
+            >
+              CONSTRUCTOR'S STANDINGS
+            </h2>
+          </div>
         </div>
         <table>
           <thead>
-            <tr>
+            <tr
+              id="head"
+            >
               <th>
-                Name
+                NAME
               </th>
               <th>
-                Position
+                POSITION
               </th>
               <th>
-                Wins
+                WINS
               </th>
               <th>
-                Points
+                POINTS
               </th>
             </tr>
           </thead>
@@ -44,24 +59,39 @@ Object {
       <div
         class="constructorsStandings"
       >
-        <h2>
-          Constructor's Standings
-        </h2>
+        <div
+          class="constructorImg"
+        >
+          <div
+            class="mask"
+          />
+        </div>
+        <div
+          class="constructorsTitleDiv"
+        >
+          <h2
+            class="constructorsTitle"
+          >
+            CONSTRUCTOR'S STANDINGS
+          </h2>
+        </div>
       </div>
       <table>
         <thead>
-          <tr>
+          <tr
+            id="head"
+          >
             <th>
-              Name
+              NAME
             </th>
             <th>
-              Position
+              POSITION
             </th>
             <th>
-              Wins
+              WINS
             </th>
             <th>
-              Points
+              POINTS
             </th>
           </tr>
         </thead>

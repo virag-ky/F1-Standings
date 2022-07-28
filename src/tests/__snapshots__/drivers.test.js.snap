@@ -11,24 +11,39 @@ Object {
         <div
           class="driversStandings"
         >
-          <h2>
-            Driver's Standings
-          </h2>
+          <div
+            class="driverImg"
+          >
+            <div
+              class="mask"
+            />
+          </div>
+          <div
+            class="driversTitleDiv"
+          >
+            <h2
+              class="driversTitle"
+            >
+              DRIVER'S STANDINGS
+            </h2>
+          </div>
         </div>
         <table>
           <thead>
-            <tr>
+            <tr
+              id="head"
+            >
               <th>
-                Name
+                NAME
               </th>
               <th>
-                Position
+                POSITION
               </th>
               <th>
-                Wins
+                WINS
               </th>
               <th>
-                Points
+                POINTS
               </th>
             </tr>
           </thead>
@@ -44,24 +59,39 @@ Object {
       <div
         class="driversStandings"
       >
-        <h2>
-          Driver's Standings
-        </h2>
+        <div
+          class="driverImg"
+        >
+          <div
+            class="mask"
+          />
+        </div>
+        <div
+          class="driversTitleDiv"
+        >
+          <h2
+            class="driversTitle"
+          >
+            DRIVER'S STANDINGS
+          </h2>
+        </div>
       </div>
       <table>
         <thead>
-          <tr>
+          <tr
+            id="head"
+          >
             <th>
-              Name
+              NAME
             </th>
             <th>
-              Position
+              POSITION
             </th>
             <th>
-              Wins
+              WINS
             </th>
             <th>
-              Points
+              POINTS
             </th>
           </tr>
         </thead>
